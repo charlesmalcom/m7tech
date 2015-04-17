@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'daysregular';
+    src: url('Days-webfont.eot');
+    src: url('Days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Days-webfont.woff') format('woff'),
+         url('Days-webfont.ttf') format('truetype'),
+         url('Days-webfont.svg#daysregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#days{
+    font-family: 'daysregular';
+
+}
+
+#days h2{
+    font-size: 26px;
+    color: #7f8c8d;
+}
+
+#days p{
+    font-size: 10px;
+    color: #95a5a6;
+}
+
+/* #95a5a6  concrete */
+/* #7f8c8d  asbestos */
+/* #ecf0f1  clouds */
+/* #34495e  wet asphalt */

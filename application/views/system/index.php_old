@@ -1,0 +1,52 @@
+<?php
+$baseURL = $this->config->item('local_views');
+
+echo"
+    <div id='container'>
+    <br />
+    
+    <form action='' method='POST'>
+        <fieldset>
+            <legend>System Status</legend>
+                <label>Section</label>"; echo form_dropdown('section', $optAdminSections); echo"&nbsp;
+                <input type='submit' value='Go'>
+        </fieldset>
+    </form>
+";
+
+    $section_value = $this->input->post('section');
+    !empty($section_value) ? "$section_value" : NULL;
+    //echo $section_value."<br />";
+
+    $resultData = $section_value.'Data';
+    //echo $resultData."<br />";
+
+    $titleData = ucfirst($section_value);
+    //echo $section_title."<br />";
+
+        if ($section_value == NULL){ $results = ''; }
+        else { $results = $section_value; }
+
+echo"<div id='results'>";
+
+!empty($results) ? include $this->config->item('local_views')."admin/$results.php" : NULL;
+//include $this->config->item('local_views')."admin/$results.php";
+
+echo"
+    <br />
+    <label>Your internal IP is: </label>".$_SERVER['SERVER_ADDR']."<br />
+    <label>Your domain is: </label>".$_SERVER['SERVER_NAME']."<br />
+    <label>Your external IP is: </label>".$_SERVER['REMOTE_ADDR']."<br />
+    $ipInfo
+    </div>
+
+</div>
+
+<div class='clear'></div>
+";
+
+/*
+ * SERVER_ADDR - INTERNAL 192.168.0.90
+ * SERVER_NAME - EXTERNAL 74.40.199.20
+ * REMOTE_ADDR - IDK      192.168.0.1
+ */

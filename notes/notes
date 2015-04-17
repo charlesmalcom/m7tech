@@ -1,0 +1,149 @@
+	>--------------------------------------------------------------------------------------------------------<
+*** templates ***
+<?= $contents ?>
+
+	>--------------------------------------------------------------------------------------------------------<
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+							 ***** EDITED PAGES *****
+	>--------------------------------------------------------------------------------------------------------<
+
+removed from header
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--
+    immix, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+    Download: http://zypopwebtemplates.com/
+
+    License: Creative Commons Attribution
+//-->
+
+	>--------------------------------------------------------------------------------------------------------<
+
+removed from intro.html
+<p>
+	<a href="#" class="button button-slider"><i class="fa fa-gbp"></i> Lorem ipsum dolor</a>
+	<a href="#" class="button button-reversed button-slider"><i class="fa fa-info"></i> Consectetuer adipiscing</a>
+</p>
+
+	>--------------------------------------------------------------------------------------------------------<
+
+<?php
+
+    if ($this->uri->segment(1) == NULL) { echo "HOME"; }
+    else{ echo $this->uri->segment(1); }
+
+?>
+
+	>--------------------------------------------------------------------------------------------------------<
+
+category dropdown list for ???, i don't remember
+other -> change from dropdown to input with a cancel button
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+							 ***** SECTIONS TO CREATE *****
+	>--------------------------------------------------------------------------------------------------------<
+
+COURSES
+courses									- IN PROGRESS
+classes (see other section)				- IN PROGRESS
+grades									- NOT STARTED
+report card								- NOT STARTED
+enrollment								- NOT STARTED
+
+
+SECURITY
+time-out feature (see other section)	- NOT STARTED
+
+BUSINESS
+marketing								- NOT STARTED
+advertising								- NOT STARTED
+receipts (see other section)			- NOT STARTED
+reports									- NOT STARTED
+email									- NOT STARTED
+calendar								- NOT STARTED
+
+USER HOME SCREENS
+system status							- NOT STARTED
+home screen								- NOT STARTED
+
+
+need to record:							- NOT STARTED
+transaction IDs							- NOT STARTED
+
+	>--------------------------------------------------------------------------------------------------------<
+*** receipts ***
+receipts -> generate
+on completion of payment, have option to either email or print a receipt
+
+	>--------------------------------------------------------------------------------------------------------<
+*** security ***
+add a time-out feature
+
+	>--------------------------------------------------------------------------------------------------------<
+student home screen
+ - courses enrolled in
+ - course grades
+ - financial information
+ - personal information
+ - email
+
+	>--------------------------------------------------------------------------------------------------------<
+*** courses ***
+get courses enrolled in, populate a dropdown menu
+show menu for course info based upon what week it is
+have links in body for downloadable info
+?? show all info of X number of weeks
+?? show course work for the week and it's status
+
+	>--------------------------------------------------------------------------------------------------------<
+*** grades ***
+get courses enrolled in, get grade on assignment
+tally & show
+
+	>--------------------------------------------------------------------------------------------------------<
+*** financial ***
+get courses enrolled in, show cost
+get payment made from beginning of course
+tally and show the difference
+
+	>--------------------------------------------------------------------------------------------------------<
+*** personal ***
+personal info
+contact info
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+
+update text color on NOACCESS
+update background color on articles
+center or stretch background image
+
+background-color: #ecf0f1;
+background-color: #699BBA;
+
+
+	>--------------------------------------------------------------------------------------------------------<
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+
+
+
+	>--------------------------------------------------------------------------------------------------------<
+
+
+
+
